@@ -7,14 +7,14 @@ body {
 }
 .navibar {
   background: #ffff;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 24px;
   padding-right: 24px;
 }
 .navibar .nav-container {
-  display: flex;
   place-content: space-between;
+  display: flex;
 }
 .navibar .logo {
   font-family: "Poppins", sans-serif;
@@ -44,16 +44,16 @@ body {
   left: 24px;
   top: 114px;
   font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
   display: flex;
   color: #172b4d;
   order: 0;
   flex-grow: 0;
   margin: 12px 0;
   align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
 }
 .h-container .second-text {
   position: static;
@@ -87,14 +87,13 @@ body {
   color: #7f8cff;
   flex: none;
 }
-.h-container ul {
-  list-style: none;
-}
 .h-container .icon-img {
   padding-left: 0;
   justify-content: flex-start;
-  gap: 25px;
-  display: -webkit-box;
+  gap: 28px;
   display: flex;
-  margin-top: 12px;
+  margin-top: 13px;
+}
+.h-container ul {
+  list-style: none;
 }
