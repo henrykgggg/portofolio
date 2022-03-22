@@ -29,13 +29,12 @@ body {
   color: #6070ff;
 }
 .h-container {
-  background-image: url("../img/header-shapes-mobile.png"),
-    url("../img/header-background-mobile.png");
+  background-image: url("../img/header-shapes-mobile.png"), url("../img/header-background-mobile.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, 100% 100%;
   padding-top: 114px;
   padding-bottom: 114px;
-  padding-left: 84px;
+  padding-left: 24px;
   padding-right: 24px;
 }
 .h-container .first-text {
