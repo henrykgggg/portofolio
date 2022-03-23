@@ -17,6 +17,7 @@ body {
 .navibar .nav-container {
   place-content: space-between;
   display: flex;
+  padding-right: 10px;
 }
 
 .navibar .logo {
@@ -33,36 +34,37 @@ body {
 }
 
 .h-container {
-  background-image: url("./img/header-shapes-mobile.png"), url("./img/header-background-mobile.png");
+  background-image: url("./img/header-shapes-mobile.png"), url("../img/header-background-mobile.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, 100% 100%;
   padding-top: 114px;
   padding-bottom: 114px;
-  padding-left: 24px;
+  padding-left: 25px;
   padding-right: 24px;
+  align-items: center;
 }
 
 .h-container .first-text {
   position: static;
-  width: 600px;
+  width: 400px;
   left: 24px;
   top: 114px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
   display: flex;
   color: #172b4d;
   order: 0;
   flex-grow: 0;
   margin: 12px 0;
   align-items: center;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
 }
 
 .h-container .second-text {
   position: static;
-  width: 327px;
+  width: 307px;
   height: 146px;
   left: 24px;
   top: 276px;
