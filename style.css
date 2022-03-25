@@ -195,3 +195,13 @@ body {
   border-color:#396df2 ;
   color: #396df2;
 }
+
+.click-btn{
+  font-size: 19px;
+  color: #396df2;
+  padding: 13px;
+  background-color: transparent;
+  margin-top: 2rem;
+  border: 1px solid #396df2;
+  border-radius: 6px;
+}
