@@ -135,3 +135,28 @@ body {
   top: 16px;
   border-radius: 8px;
 }
+
+.lists-conatiner {
+  width: 100%;
+  align-items: center;
+}
+
+.lists{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lists-item{
+  color: #7a869a;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.lists .obect1{
+  text-transform: capitalize;
+  color: #344563;
+}
