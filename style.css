@@ -138,6 +138,7 @@ h2{
   margin-bottom: 2.5rem;
   left: 24px;
   top: 114px;
+  list-style: none;
   border-radius: 16px;
   padding: 16px;
   background-color: #fff;
@@ -173,6 +174,10 @@ h2{
   text-transform: capitalize;
 }
 
+.hold-item {  
+  height: fit-content;
+}
+
 .lists .obect1{
   text-transform: capitalize;
   color: #344563;
@@ -181,7 +186,6 @@ h2{
 .text-holder {
   position: static;
   width: 327px;
-  height: 146px;
   left: 24px;
   top: 276px;
   font-family: "Poppins", sans-serif;
@@ -219,13 +223,15 @@ h2{
 .language-container{
   display: flex;
   align-items: center;
+  padding: 0;
 }
 
 .language-item{
+  list-style: none;
   background: #ebebff;
   border-radius: 8px;
   padding: 2px 4px;
-  margin: 0 8px;
+  margin: 0 2px;
   font-size: 14px;
   border-color:#396df2 ;
   color: #396df2;
