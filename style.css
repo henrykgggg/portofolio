@@ -163,6 +163,7 @@ h2{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 80%;
 }
 
 .lists-item{
@@ -257,9 +258,11 @@ h2{
   padding-bottom: 2rem;
   padding-left: 24px;
   padding-right: 24px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, 100% 100%;
 }
 
-.content .icon{
+.about-me .ico{
   position: static;
   left: 0;
   top: 0;
@@ -273,15 +276,18 @@ h2{
   order: 0;
   flex-grow: 0;
   margin: 0;
+  list-style: none;
 }
 
-.content .icon-img{
+.about-me .ico-img{
   padding-left: 0;
   justify-content: flex-start;
   gap: 28px;
   display: flex;
   flex-direction: row;
   margin-top: 13px;
+  list-style: none;
+  padding-top: 10px;
 }
 
 .resume-btn{
@@ -292,4 +298,56 @@ h2{
   margin-top: 2rem;
   border: 1px solid #396df2;
   border-radius: 6px;
+  padding-top: 9px;
+  margin-top: 3px;
 }
+
+.about-me .lang {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+.lang .lang-exp {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3.5rem;
+}
+
+.lang .no-1{
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 400;
+  position: relative;
+  padding: 10px 0;
+  color: #000;
+}
+
+.lang .lang-exp .no-1 span i {
+  color: #acb7c3;
+}
+
+.lang .lang-exp .no-1::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #dfe1e6;
+}
+
+.lang .languages {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
