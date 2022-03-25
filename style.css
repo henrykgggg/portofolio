@@ -111,7 +111,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .hold-item {
@@ -183,7 +182,6 @@ body {
 .language-container{
   display: flex;
   align-items: center;
-  flex-direction: column;
 }
 
 .language-item{
