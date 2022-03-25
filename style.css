@@ -179,3 +179,19 @@ body {
   padding-top: 8px;
   padding-bottom: 6px;
 }
+
+.language-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.language-item{
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 2px 4px;
+  margin: 0 8px;
+  font-size: 14px;
+  border-color:#396df2 ;
+  color: #396df2;
+}
