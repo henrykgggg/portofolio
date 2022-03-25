@@ -178,7 +178,26 @@ h2{
   color: #344563;
 }
 
-.text-holder{
+.text-holder {
+  position: static;
+  width: 327px;
+  height: 146px;
+  left: 24px;
+  top: 276px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding-top: 8px;
+  padding-bottom: 6px;
+}
+
+.information{
   position: static;
   width: 327px;
   height: 146px;
@@ -220,4 +239,39 @@ h2{
   margin-top: 2rem;
   border: 1px solid #396df2;
   border-radius: 6px;
+}
+
+.about-me{
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fff;
+  border-top-right-radius: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.content .icon{
+  position: static;
+  left: 0;
+  top: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0;
+}
+
+.content .icon-img{
+  padding-left: 0;
+  justify-content: flex-start;
+  gap: 28px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 13px;
 }
