@@ -107,3 +107,23 @@ body {
   list-style: none;
 }
 
+.flex-column{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hold-item {
+  border: 1px solid #7a869a;
+  height: 552px;
+  width: 327px;
+  margin-bottom: 2.5rem;
+  left: 24px;
+  top: 114px;
+  border-radius: 16px;
+  padding: 16px;
+  background-color: #fff;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
