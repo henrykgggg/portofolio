@@ -127,3 +127,11 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
 }
+
+.hold-image {
+  height: 220px;
+  width: 295px;
+  left: 16px;
+  top: 16px;
+  border-radius: 8px;
+}
