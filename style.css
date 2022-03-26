@@ -60,7 +60,7 @@ body {
   align-items: center;
 }
 
-h2{
+h2 {
   position: static;
   width: 60%;
   left: 24px;
@@ -121,26 +121,36 @@ h2{
   margin-top: 13px;
 }
 
+.projects {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 90%;
+  margin: 100px auto 100px;
+}
+
+.card-contain {
+  border: 1px solid #7a869a;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.card-contain ul {
+  padding: 0;
+  margin: 0;
+}
+
 .h-container ul {
   list-style: none;
 }
 
-.flex-column{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .hold-item {
-  border: 1px solid #7a869a;
-  height: 552px;
-  width: 327px;
-  margin-bottom: 2.5rem;
-  left: 24px;
-  top: 114px;
+  width: 90%;
+  margin: 0 auto;
   list-style: none;
-  border-radius: 16px;
-  padding: 16px;
+  padding: 20px 0;
   background-color: #fff;
   justify-content: flex-start;
   align-items: flex-start;
@@ -148,7 +158,7 @@ h2{
 
 .hold-image {
   height: 220px;
-  width: 295px;
+  width: 100%;
   left: 16px;
   top: 16px;
   border-radius: 8px;
@@ -159,14 +169,14 @@ h2{
   align-items: center;
 }
 
-.lists{
+.lists {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 80%;
 }
 
-.lists-item{
+.lists-item {
   color: #7a869a;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -175,11 +185,7 @@ h2{
   text-transform: capitalize;
 }
 
-.hold-item {  
-  height: fit-content;
-}
-
-.lists .obect1{
+.lists .obect1 {
   text-transform: capitalize;
   color: #344563;
 }
@@ -202,7 +208,7 @@ h2{
   padding-bottom: 6px;
 }
 
-.information{
+.information {
   position: static;
   width: 327px;
   height: 146px;
@@ -221,24 +227,25 @@ h2{
   padding-bottom: 6px;
 }
 
-.language-container{
+.language-container {
   display: flex;
   align-items: center;
   padding: 0;
+  gap: 8px;
 }
 
-.language-item{
+.language-item {
   list-style: none;
   background: #ebebff;
   border-radius: 8px;
-  padding: 2px 4px;
+  padding: 5px 10px;
   margin: 0 2px;
   font-size: 14px;
-  border-color:#396df2 ;
+  border-color: #396df2;
   color: #396df2;
 }
 
-.click-btn{
+.click-btn {
   font-size: 19px;
   color: #396df2;
   padding: 13px;
@@ -248,8 +255,8 @@ h2{
   border-radius: 6px;
 }
 
-.about-me{
-  width: 100%;
+.about-me {
+  width: 90%;
   margin: 0 auto;
   overflow: hidden;
   background-color: #fff;
@@ -262,7 +269,7 @@ h2{
   background-size: cover, 100% 100%;
 }
 
-.about-me .ico{
+.about-me .ico {
   position: static;
   left: 0;
   top: 0;
@@ -279,7 +286,7 @@ h2{
   list-style: none;
 }
 
-.about-me .ico-img{
+.about-me .ico-img {
   padding-left: 0;
   justify-content: flex-start;
   gap: 28px;
@@ -290,64 +297,72 @@ h2{
   padding-top: 10px;
 }
 
-.resume-btn{
+.resume-btn {
   font-size: 19px;
   color: #396df2;
   padding: 13px;
   background-color: transparent;
-  margin-top: 2rem;
   border: 1px solid #396df2;
   border-radius: 6px;
   padding-top: 9px;
   margin-top: 3px;
 }
 
-.about-me .lang {
-  width: 100%;
+.lang {
+  margin: 30px 0 0 0;
+  padding: 0;
   display: flex;
   align-content: center;
   flex-direction: column;
+  gap: 30px;
 }
 
-.lang .lang-exp {
-  width: 100%;
-  margin: 0 auto;
+.languages {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.languages li {
+  list-style: none;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  padding: 0 3.5rem;
+  gap: 20px;
+  background-color: #f7f7f9;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.lang .no-1{
-  display: inline-flex;
+.languages li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.lang-exp {
+  margin: 0;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.lang-exp hr {
   width: 100%;
+}
+
+.no-1 {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 22px;
-  font-weight: 400;
-  position: relative;
-  padding: 10px 0;
-  color: #000;
+  margin-right: 20px;
+}
+
+.no-1 p {
+  font-weight: bold;
+  margin: 0;
 }
 
 .lang .lang-exp .no-1 span i {
   color: #acb7c3;
 }
-
-.lang .lang-exp .no-1::after {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #dfe1e6;
-}
-
-.lang .languages {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
