@@ -390,35 +390,43 @@ h2 {
   color: #acb7c3;
 }
 
-.contacts {
-  background-image: url("./img/shapes\ mobile.png");
+footer {
   background-image: url("./img/Header-desk.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts {
+  background-image: url("./img/contactshapes.png");
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   gap: 10px;
   width: 100%;
   margin-top: 3rem;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 50% 100%;
+  background-position: right;
 }
 
 .contact-section {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  margin: 0 auto;
-  gap: 2px;
+  width: 90%;
+  margin: 0 auto 50px;
+  gap: 10px;
   background-repeat: no-repeat;
+}
+
+.contact-intro {
+  margin-top: 80px;
 }
 
 .contact-me {
   font-size: 2rem;
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 1px;
   color: white;
-  top: 75px;
 }
 
 .paragraph {
@@ -431,11 +439,8 @@ h2 {
 
 .text-holder1 {
   height: 3rem;
-  width: 327px;
   align-items: center;
-  margin-left: 1rem;
   border-radius: 0.5rem;
-  margin-top: 1rem;
   border: none;
   padding: 12px;
   margin-bottom: 3px;
@@ -444,25 +449,18 @@ h2 {
 .text-area {
   color: #b3bac5;
   height: 10rem;
-  margin-left: 0.8rem;
-  margin-top: 1rem;
   border-radius: 0.5rem;
   border: none;
   padding: 12px;
-  width: 327px;
 }
 
 .clicked-btn {
   font-size: 19px;
   color: #396df2;
   width: 30%;
-  padding: 13px;
+  padding: 15px 10px;
   background-color: transparent;
   border: 1px solid #396df2;
-  border-radius: 6px;
-  padding-top: 9px;
-  margin-top: 3px;
-  margin-left: 10px;
-  margin-bottom: 20px;
+  border-radius: 10px;
   align-self: start;
 }
