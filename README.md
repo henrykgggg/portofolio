@@ -3,7 +3,9 @@
 ## Portofolio
 
 This my portofolio website which describe my ability and my recents projects and teck I used.
-![screencapture-127-0-0-1-5500-portofolio-index-html-2022-03-26-11_56_48](https://user-images.githubusercontent.com/88551100/160251673-432ab487-094e-47e7-a907-5b10187f8916.png)
+
+![screencapture-127-0-0-1-5500-portofolio-index-html-2022-03-30-14_11_02](https://user-images.githubusercontent.com/88551100/160922735-b512bfe5-c5bb-47d1-b629-d56d5d856c7e.png)
+
 
 ## Built With
 
