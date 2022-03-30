@@ -391,45 +391,42 @@ h2 {
 }
 
 .contacts {
+  background-image: url("./img/shapes\ mobile.png");
   background-image: url("./img/Header-desk.png");
-  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   width: 100%;
-  margin-top: 4rem;
+  margin-top: 3rem;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-left: 10px;
 }
 
 .contact-section {
-  background-image: url("./images/contactfrommoblieversionlogo.png");
-  width: 100%;
-  position: relative;
-  top: 45px;
-  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  gap: 2px;
   background-repeat: no-repeat;
-  background-position: right;
 }
 
-.contact_me {
-  font-size: 2.5rem;
+.contact-me {
+  font-size: 2rem;
   text-align: center;
-  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1px;
   color: white;
-  position: relative;
   top: 75px;
 }
 
 .paragraph {
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
   text-align: center;
   color: white;
   width: 334px;
-  margin-left: 14px;
-  margin-bottom: 6rem;
-  position: relative;
-  top: 55px;
 }
 
 .text-holder1 {
@@ -440,7 +437,7 @@ h2 {
   border-radius: 0.5rem;
   margin-top: 1rem;
   border: none;
-  padding: 0.5rem;
+  padding: 12px;
   margin-bottom: 3px;
 }
 
@@ -451,6 +448,21 @@ h2 {
   margin-top: 1rem;
   border-radius: 0.5rem;
   border: none;
-  padding: 1rem;
+  padding: 12px;
   width: 327px;
+}
+
+.clicked-btn {
+  font-size: 19px;
+  color: #396df2;
+  width: 30%;
+  padding: 13px;
+  background-color: transparent;
+  border: 1px solid #396df2;
+  border-radius: 6px;
+  padding-top: 9px;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  align-self: start;
 }
