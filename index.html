@@ -276,14 +276,22 @@
         </li>
       </ul>
     </section>
-    <footer class="contacts" >
-        <h1 class="contact-me">Contact me</h1>
-        <p class="paragraph">
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it
-        </p>
-          <form class="contact-section" action="https://formspree.io/f/xbjwkev"  method="post"></form>
+    <footer>
+      <div class="contacts">
+        <div class="contact-intro">
+          <h1 class="contact-me">Contact me</h1>
+      <p class="paragraph">
+        If you have an application you are interested in developing, a feature
+        that you need built or a project that needs coding. I’d love to help
+        with it
+      </p>
+        </div>
+
+      <form
+        class="contact-section"
+        action="https://formspree.io/f/xbjwkev"
+        method="post"
+      >
         <input
           id="name"
           class="text-holder1"
@@ -308,7 +316,10 @@
           maxlength="500"
           required
         ></textarea>
-        <button class="clicked-btn" type="submit" name="sumit">Get In Touch</button>
+        <button class="clicked-btn" type="submit" name="sumit">
+          Get In Touch
+        </button>
+      </div>
       </form>
     </footer>
   </body>
