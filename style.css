@@ -389,3 +389,68 @@ h2 {
 .lang .lang-exp .no-1 span i {
   color: #acb7c3;
 }
+
+.contacts {
+  background-image: url("./img/Header-desk.png");
+  min-height: 800px;
+  width: 100%;
+  margin-top: 4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 10px;
+}
+
+.contact-section {
+  background-image: url("./images/contactfrommoblieversionlogo.png");
+  width: 100%;
+  position: relative;
+  top: 45px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.contact_me {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-right: 1rem;
+  color: white;
+  position: relative;
+  top: 75px;
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: white;
+  width: 334px;
+  margin-left: 14px;
+  margin-bottom: 6rem;
+  position: relative;
+  top: 55px;
+}
+
+.text-holder1 {
+  height: 3rem;
+  width: 327px;
+  align-items: center;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  border: none;
+  padding: 0.5rem;
+  margin-bottom: 3px;
+}
+
+.text-area {
+  color: #b3bac5;
+  height: 10rem;
+  margin-left: 0.8rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 1rem;
+  width: 327px;
+}

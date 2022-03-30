@@ -276,19 +276,21 @@
         </li>
       </ul>
     </section>
-    <footer id="contact" class="contact-container">
-      <div class="contact-container">
-        <h1 class="first-text">Contact me</h1>
+    <footer>
+      <form class="contacts" action="https://formspree.io/f/xbjwkev"  method="post">
+        <div class="contact-section">
+          <div class="contact-me">
+        <h1>Contact me</h1>
+      </div>
         <p class="paragraph">
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
           with it
         </p>
-      </div>
-      <form action="" class="form-container">
+        <div class="contact-section">
         <input
           id="name"
-          class="text-area"
+          class="text-holder1"
           type="text"
           name="name"
           maxlength="30"
@@ -297,11 +299,11 @@
         />
         <input
           id="email"
-          class="text-area"
+          class="text-holder1"
           type="email"
           name="name"
           required
-          placeholder="name"
+          placeholder="email"
         />
         <textarea
           id="messag"
@@ -310,7 +312,8 @@
           maxlength="500"
           required
         ></textarea>
-        <button type="submit" name="sumit">Get In Touch</button>
+        <button class="btn" type="submit" name="sumit">Get In Touch</button>
+      </div>
       </form>
     </footer>
   </body>
