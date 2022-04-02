@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap");
 
 body {
-  background: #fff;
+  background: #f7f7f9;
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
@@ -66,6 +66,7 @@ button:disabled {
   padding-bottom: 114px;
   padding-left: 24px;
   padding-right: 24px;
+  background-color: #fff;
 }
 
 .first-text {
@@ -473,9 +474,14 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .navibar {
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+  }
+
+  .nav-container {
     width: 80%;
     margin: 0 auto;
-    padding: 0;
   }
 
   .mobile-menu {
@@ -505,6 +511,7 @@ footer {
     flex-flow: column;
     background-image: url(./img/Header-desktop.png);
     background-size: 100%;
+    border-bottom-left-radius: 100px;
   }
 
   .h-container > * {
@@ -552,14 +559,21 @@ footer {
 
   .about-me {
     padding: 0;
+    width: 100%;
+    border-top-right-radius: 100px;
   }
 
   .about-me-holder {
     display: flex;
     flex-direction: row;
-    gap: 5%;
-    width: 100%;
+    margin: 0 auto;
+    gap: 60px;
+    width: 90%;
     height: auto;
+  }
+
+  .card-contain {
+    border-color: #dfe1e6;
   }
 
   .about-me-holder section {
@@ -567,11 +581,11 @@ footer {
   }
 
   .about-me-holder section:nth-child(1) {
-    width: 45%;
+    width: 40%;
   }
 
   .about-me-holder section:nth-child(2) {
-    width: 50%;
+    width: 60%;
   }
 
   .lang ul {
