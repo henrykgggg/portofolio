@@ -6,37 +6,34 @@ const menu1 = document.getElementById('menu1');
 const menu2 = document.getElementById('menu2');
 const menu3 = document.getElementById('menu3');
 
-
-function preventScroll(e){
-    e.tpreventDefault();
-    e.stopPropagaion();
-    return false;
+function preventScroll(e) {
+  e.tpreventDefault();
+  e.stopPropagaion();
+  return false;
 }
 
 function openMenu() {
-    btn.style.display = "none";
-    mobileMenu.style.display ="flex";
-    myLogo.style.display="none";
-    document.querySelector('.scrllStop').addEventListener('wheel', preventScroll, {passive: false});
+  btn.style.display = 'none';
+  mobileMenu.style.display = 'flex';
+  myLogo.style.display = 'none';
+  document.querySelector('.scrollStop').addEventListener('wheel', preventScroll, { passive: false });
 }
 
-btn.addEventListener('click', openMenu)
+btn.addEventListener('click', openMenu);
 function closeMenu() {
-    mobileMenu.style.display ="none";
-    btn.style.display= "block";
-    myLogo.style.display ="block";
-    document.querySelector('.scrollable').removeEventListener('wheel', preventScroll, {passive: false});  
+  mobileMenu.style.display = 'none';
+  btn.style.display = 'block';
+  myLogo.style.display = 'block';
+  document.querySelector('.scrollStop').removeEventListener('wheel', preventScroll, { passive: false });
 }
 
 document.addEventListener('click', (event) => {
-    if(event.target.id === "close-menu") {
-        closeMenu();
-    }else if(event.target.id === "logo"){
-        closeMenu();
-    }
-
+  if (event.target.id === 'close-menu') {
+    closeMenu();
+  } else if (event.target.id === 'logo') {
+    closeMenu();
+  }
 });
-
 
 menu1.addEventListener('click', closeMenu);
 menu2.addEventListener('click', closeMenu);

@@ -43,7 +43,6 @@ button:disabled {
 .navibar .nav-container {
   display: flex;
   justify-content: space-between;
-
 }
 
 .navibar .logo {
@@ -58,50 +57,58 @@ button:disabled {
   text-align: center;
   color: #6070ff;
 }
+
+.card-contain ul {
+  padding: 0;
+  margin: 0;
+}
+
+.h-container ul {
+  list-style: none;
+}
+
 #mobile-menu {
-     position: fixed;
-    display: none;
-    flex-direction: column;
-    justify-content: start;
-    background-color: #FFFFFF;
-    background-color: #6070FF;
-    mix-blend-mode: multiply;
-    height: 100vh;
-    gap: 8px;
-    font-size: larger;
-    list-style-type: none;
-    opacity: 1.0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    z-index: 99;
-
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #fff;
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  height: 100vh;
+  gap: 8px;
+  font-size: larger;
+  list-style-type: none;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  z-index: 99;
 }
 
- .navbar-item a{
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size:x-large;
-    font-weight: 500;
-    
+.navbar-item a {
+  color: #ffff;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: 500;
 }
 
-#mobile-menu ul{
+#mobile-menu ul {
   list-style-type: none;
 }
 
-#close-menu{
+#close-menu {
   display: flex;
   justify-content: end;
-  color: #FFFFFF;
+  color: #ffff;
   margin-right: 40px;
   margin-top: 20px;
 }
 
-#menu-btn{
-  border-radius:1px;
+#menu-btn {
+  border-radius: 1px;
   z-index: 1;
   border: none;
 }
@@ -112,16 +119,16 @@ button:disabled {
   border-color: #6070ff;
 }
 
-.navi-item{
+.navi-item {
   list-style-type: none;
 }
 
-.nav-list{
+.nav-list {
   display: none;
 }
 
-.navi-item a{
-  color: #FFFFFF;
+.navi-item a {
+  color: #ffff;
   list-style-type: none;
 }
 
@@ -232,15 +239,6 @@ h2 {
   margin: 0 auto;
   border-radius: 16px;
   background-color: #fff;
-}
-
-.card-contain ul {
-  padding: 0;
-  margin: 0;
-}
-
-.h-container ul {
-  list-style: none;
 }
 
 .hold-item {
@@ -539,15 +537,14 @@ footer {
   align-self: start;
 }
 
-
 @media only screen and (min-width: 768px) {
-
   .nav-container {
     /* display: flex;
     align-self: flex-end; */
     width: 90%;
     margin: 0 auto;
   }
+
   .navibar {
     width: 100%;
     padding: 0;
@@ -558,7 +555,7 @@ footer {
     display: none;
   }
 
-  #menu-btn{
+  #menu-btn {
     display: none;
   }
 
@@ -720,4 +717,3 @@ footer {
     background-image: url(./img/contact-deskk.png), url(./img/contact-blue.png);
   }
 }
-
