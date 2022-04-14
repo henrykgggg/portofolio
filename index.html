@@ -6,19 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portofolio: setup and mobile version skeleton</title>
     <link rel="stylesheet" href="style.css" />
+   <script defer src="menu.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
-  <body class="">
+  <body>
     <header class="navibar">
-      <nav class="nav-container">
-        <a class="logo" href="#">My Logo</a>
-        <img class="mobile-menu" src="img/Union.png" alt=" navigation" />
-        <ul class="nav-list">
-          <li class="navi-item"><a href="#portofolio">portofolio</a></li>
+
+      <nav class="nav-container ">
+        <a id="logo" class="logo" href="#">My Logo</a>
+        
+        <ul class="nav-list ">
+          <li class="navi-item"><a href="#portofolio">Portofolio</a></li>
           <li class="navi-item"><a href="#about">About</a></li>
           <li class="navi-item"><a href="#Contact">Contact</a></li>
         </ul>
+        <button id="menu-btn" class="menu-btn">
+          <img class="mobile-menu" src="img/Union.png" alt=" navigation" />
+        </button>
       </nav>
+
     </header>
+    <section id="mobile-menu">
+      <i class="fa-solid fa-xmark " id="close-menu"></i>
+    <ul>
+      <li class="navbar-item"><a href="#portfolio">Portofolio</a></li>
+      <li class="navbar-item"><a href="#about">About</a></li>
+      <li class="navbar-item"><a href="#Contact">Contact</a></li>
+    </ul>
+  </section>
     <section class="h-container">
       <h1 class="first-text">I’m Karamaga <br />Glade to see you!</h1>
       <p class="second-text">
@@ -58,7 +74,7 @@
         </li>
       </ul>
     </section>
-    <section class="projects">
+    <section id="projects" class="projects">
       <div class="card-contain">
         <ul class="cards-list flex_column">
           <li class="hold-item flex-culomn">
@@ -106,7 +122,7 @@
               src="img/Snapshoot-Portfolio2.png"
               alt="Portfolio Portfolio"
             />
-            <section>
+            <section id="portfolio">
               <div class="lists-container">
                 <h2>Tonic</h2>
                 <div class="lists">
@@ -212,7 +228,7 @@
         </ul>
       </div>
     </section>
-    <section class="about-me">
+    <section id="about" class="about-me">
       <div class="about-me-holder">
         <section>
           <h2 class="head">About Myself</h2>
@@ -299,7 +315,7 @@
       </div>
     </section>
     <footer>
-      <div class="contacts">
+      <section id="Contact" class="contacts">
         <div class="contact-intro">
           <h1 class="contact-me">Contact me</h1>
           <p class="paragraph">
@@ -342,7 +358,7 @@
             Get In Touch
           </button>
         </form>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
