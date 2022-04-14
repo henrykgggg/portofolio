@@ -36,13 +36,10 @@ button:disabled {
   padding-right: 24px;
 }
 
-.nav-list {
-  display: none;
-}
-
 .navibar .nav-container {
-  place-content: space-between;
   display: flex;
+  justify-content: space-between;
+
 }
 
 .navibar .logo {
@@ -56,6 +53,66 @@ button:disabled {
   align-items: center;
   text-align: center;
   color: #6070ff;
+}
+#mobile-menu {
+     position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #FFFFFF;
+    background-color: #6070FF;
+    mix-blend-mode: multiply;
+    height: 100vh;
+    gap: 8px;
+    font-size: larger;
+    list-style-type: none;
+    opacity: 1.0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    z-index: 99;
+
+}
+
+ .navbar-item a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size:x-large;
+    font-weight: 500;
+    
+}
+
+#mobile-menu ul{
+  list-style-type: none;
+}
+
+#close-menu{
+  display: flex;
+  justify-content: end;
+  color: #FFFFFF;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+#menu-btn{
+  border-radius:1px;
+  z-index: 1;
+  
+}
+
+.navi-item{
+  list-style-type: none;
+}
+
+.nav-list{
+  display: none;
+}
+
+.navi-item a{
+  color: #FFFFFF;
+  list-style-type: none;
 }
 
 .h-container {
@@ -107,7 +164,7 @@ h2 {
 
 .second-text {
   position: static;
-  width: 327px;
+  width: 100%;
   height: 146px;
   left: 24px;
   top: 276px;
@@ -115,12 +172,12 @@ h2 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 22px;
   color: #344563;
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 12px 0;
+  margin: 12px 0 10px 0;
 }
 
 .icon {
@@ -472,26 +529,33 @@ footer {
   align-self: start;
 }
 
+
 @media only screen and (min-width: 768px) {
+
+  .nav-container {
+    /* display: flex;
+    align-self: flex-end; */
+    width: 90%;
+    margin: 0 auto;
+  }
   .navibar {
     width: 100%;
     padding: 0;
     background-color: #fff;
   }
 
-  .nav-container {
-    width: 80%;
-    margin: 0 auto;
+  .mobile-menu {
+    display: none;
   }
 
-  .mobile-menu {
+  #menu-btn{
     display: none;
   }
 
   .nav-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 2px;
     list-style-type: none;
     padding: 0;
   }
@@ -520,9 +584,9 @@ footer {
     height: auto;
   }
 
-  .second-text {
+  /* .second-text {
     order: 0;
-  }
+  } */
 
   .first-text {
     font-size: 35px;
@@ -646,3 +710,4 @@ footer {
     background-image: url(./img/contact-deskk.png), url(./img/contact-blue.png);
   }
 }
+
