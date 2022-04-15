@@ -16,7 +16,7 @@ function openMenu() {
   btn.style.display = 'none';
   mobileMenu.style.display = 'flex';
   myLogo.style.display = 'none';
-  document.querySelector('.scrollStop').addEventListener('wheel', preventScroll, { passive: false });
+  document.querySelector('.scrollable').addEventListener('wheel', preventScroll, { passive: false });
 }
 
 btn.addEventListener('click', openMenu);
@@ -24,7 +24,7 @@ function closeMenu() {
   mobileMenu.style.display = 'none';
   btn.style.display = 'block';
   myLogo.style.display = 'block';
-  document.querySelector('.scrollStop').removeEventListener('wheel', preventScroll, { passive: false });
+  document.querySelector('.scrollable').removeEventListener('wheel', preventScroll, { passive: false });
 }
 
 document.addEventListener('click', (event) => {
