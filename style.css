@@ -585,9 +585,6 @@ footer {
   }
 
   .h-container {
-    display: flex;
-    gap: 10px;
-    flex-flow: column;
     background-image: url(./img/Header-desktop.png);
     background-size: 100%;
     border-bottom-left-radius: 100px;
@@ -605,6 +602,15 @@ footer {
 
   .first-text {
     font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .second-text {
+    margin-bottom: 20px;
+  }
+
+  #message {
+    color: #b3bac5;
   }
 
   .hold-item {
