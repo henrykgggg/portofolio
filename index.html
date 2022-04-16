@@ -6,19 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portofolio: setup and mobile version skeleton</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="validation.js"></script>
+    <script defer src="menu.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body class="">
+  <body class="scrollable">
     <header class="navibar">
       <nav class="nav-container">
-        <a class="logo" href="#">My Logo</a>
-        <img class="mobile-menu" src="img/Union.png" alt=" navigation" />
+        <a id="logo" class="logo" href="#">My Logo</a>
+
         <ul class="nav-list">
-          <li class="navi-item"><a href="#portofolio">portofolio</a></li>
-          <li class="navi-item"><a href="#about">About</a></li>
+          <li class="navi-item"><a href="#Portfolio">Portofolio</a></li>
+          <li class="navi-item"><a href="#About">About</a></li>
           <li class="navi-item"><a href="#Contact">Contact</a></li>
         </ul>
+        <button id="menu-btn" class="menu-btn">
+          <img class="mobile-menu" src="img/Union.png" alt=" navigation" />
+        </button>
       </nav>
     </header>
+    <section id="mobile-menu">
+      <i class="fa-solid fa-xmark" id="close-menu"></i>
+      <ul>
+        <li id="menu1" class="navbar-item">
+          <a href="#Portfolio">Portofolio</a>
+        </li>
+        <li id="menu2" class="navbar-item"><a href="#About">About</a></li>
+        <li id="menu3" class="navbar-item"><a href="#Contact">Contact</a></li>
+      </ul>
+    </section>
     <section class="h-container">
       <h1 class="first-text">I’m Karamaga <br />Glade to see you!</h1>
       <p class="second-text">
@@ -58,7 +80,7 @@
         </li>
       </ul>
     </section>
-    <section class="projects">
+    <section id="projects" class="projects">
       <div class="card-contain">
         <ul class="cards-list flex_column">
           <li class="hold-item flex-culomn">
@@ -106,7 +128,7 @@
               src="img/Snapshoot-Portfolio2.png"
               alt="Portfolio Portfolio"
             />
-            <section>
+            <section id="Portfolio">
               <div class="lists-container">
                 <h2>Tonic</h2>
                 <div class="lists">
@@ -212,14 +234,14 @@
         </ul>
       </div>
     </section>
-    <section class="about-me">
+    <section id="About" class="about-me">
       <div class="about-me-holder">
         <section>
           <h2 class="head">About Myself</h2>
           <p class="information">
             Hello I’m a software developer! I can help you build a product ,
             feature or website Look through some of my work and experience! If
-            you like what you see and have a project you need coded, don’t
+            you like what you  see and have a project you need coded, don’t
             hestiate to contact me.
           </p>
           <h4 class="ico">LET’S CONNECT</h4>
@@ -299,7 +321,7 @@
       </div>
     </section>
     <footer>
-      <div class="contacts">
+      <section id="Contact" class="contacts">
         <div class="contact-intro">
           <h1 class="contact-me">Contact me</h1>
           <p class="paragraph">
@@ -308,7 +330,6 @@
             to help with it
           </p>
         </div>
-
         <form
           class="contact-section"
           action="https://formspree.io/f/xyyoddrv"
@@ -332,17 +353,20 @@
             placeholder="email"
           />
           <textarea
-            id="messag"
+            id="message"
             class="text-area"
-            placeholder="Write your message"
+            placeholder="Write your message here"
             maxlength="500"
             required
           ></textarea>
-          <button class="clicked-btn" type="submit" name="sumit">
-            Get In Touch
-          </button>
+          <div id="form-button">
+            <button class="clicked-btn" type="submit" name="sumit">
+              Get In Touch
+            </button>
+            <p id="form-error"></p>
+          </div>
         </form>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
