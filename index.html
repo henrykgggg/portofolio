@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portofolio: setup and mobile version skeleton</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="validation.js"></script>
     <script defer src="menu.js"></script>
     <link
       rel="stylesheet"
@@ -331,6 +332,7 @@
         </div>
 
         <form
+          id="form"
           class="contact-section"
           action="https://formspree.io/f/xyyoddrv"
           method="post"
@@ -353,15 +355,18 @@
             placeholder="email"
           />
           <textarea
-            id="messag"
+            id="message"
             class="text-area"
             placeholder="Write your message"
             maxlength="500"
             required
           ></textarea>
-          <button class="clicked-btn" type="submit" name="sumit">
-            Get In Touch
-          </button>
+          <div id="form-button">
+            <button class="clicked-btn" type="submit" name="sumit">
+              Get In Touch
+            </button>
+            <p id="form-error"></p>
+          </div>
         </form>
       </section>
     </footer>
